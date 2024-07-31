@@ -1,0 +1,171 @@
+.hero {
+  padding: 41px 15px 40px;
+}
+
+
+.hero__title {
+  text-align: center;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.hero__dropping {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__dropping-panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+
+
+.hero__dropping-radio {
+  display: none;
+}
+
+.hero__dropping-radio--one:checked ~ .hero__dropping-panels .hero__dropping-panel--one,
+.hero__dropping-radio--two:checked ~ .hero__dropping-panels .hero__dropping-panel--two,
+.hero__dropping-radio--three:checked ~ .hero__dropping-panels .hero__dropping-panel--three {
+  display: block;
+}
+
+.hero__dropping-tabs {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -2px 0 0 rgb(120, 120, 120, 0.6) inset;
+  margin-bottom: 30px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto 40px;
+  }
+}
+
+.hero__dropping-tab {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba($color-black, 0.5);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+
+  &:hover {
+    color: rgba($color-black, 0.7);
+    border-bottom: 2px solid #787878;
+  }
+
+  &:focus-visible {
+    color: $color-black;
+    border-bottom: 2px solid $color-black;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-black;
+    border-bottom: 2px solid $button-banners;
+    outline: none;
+  }
+}
+
+.hero__dropping-radio--one:checked ~ .hero__dropping-tabs .hero__dropping-tab--one,
+.hero__dropping-radio--two:checked ~ .hero__dropping-tabs .hero__dropping-tab--two {
+  color: $color-black;
+  border-bottom: 2px solid $button-banners;
+  outline: none;
+}
+
+.hero__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: $bg-extra;
+  text-align: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.hero__item {
+  padding: 44px 35px 43px;
+  background-color: $color-white;
+  border: 7px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 58px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
+}
+
+.hero__titled {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 18px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 17px;
+    min-width: 230px;
+  }
+}
+
+.hero__img {
+  display: block;
+  width: 230px;
+  height: 187px;
+  object-fit: contain;
+}
