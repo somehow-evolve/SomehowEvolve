@@ -1,27 +1,16 @@
 .header {
   position: relative;
   padding: 13px 0 12px;
+  background-color: $background;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 25px 0 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
-  }
-}
-
-
-.header--catalog {
-  @media (max-width: $mobile-width) {
-    border-bottom: 1px solid $color-gray-100;
+    padding: 25px 0 15px;
   }
 }
 
 .header__logo-sign {
   text-decoration: none;
-  width: 101px;
+  width: 170px;
   height: 19px;
   margin: 10px 3px 0 0;
 
@@ -34,7 +23,6 @@
 .header__wrraper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .header__logo {
