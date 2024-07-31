@@ -1,0 +1,24 @@
+/* здесь используйте глобальные переменные */
+
+
+// текст
+$color-black: #000000;
+$color-white: #ffffff;
+$text-accent: rgba(185, 8, 8, 0.5);
+
+// Background Colors
+$background: rgba(11, 92, 85, 0.2);
+$background-hover: rgba(9, 184, 67, 0.2);
+$bg-extra: #f8f9fc;
+
+// button color
+$button-banners: #ed0233;
+$button-border: #74819c;
+
+// Заливка кнопки, обводка плашек
+$stroke: linear-gradient(149deg, #d10a42 0.85%, #00359f 100%);
+
+//  Вьюпорты
+$desktop-width: 1240px;
+$tablet-width: 768px;
+$mobile-width: 767px;
