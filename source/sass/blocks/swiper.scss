@@ -1,0 +1,97 @@
+.swiper {
+  background-color: $color-white;
+  position: relative;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 99px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+  }
+}
+
+.swiper__title {
+  text-align: center;
+}
+
+.swiper-button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &:hover {
+    border: 1px solid $color-black;
+  }
+
+  &:focus {
+    background-color: #e8e8e8;
+  }
+
+
+  &:active {
+    background-color: $color-black;
+  }
+}
+
+.swiper__container {
+  overflow: hidden;
+  width: 240px;
+  margin: 0 auto;
+  padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+  }
+}
+
+.swiper__button-next,
+.swiper__button-prev {
+  top: calc(61% - 8px);
+
+  @media (min-width: $desktop-width) {
+    top: calc(62% - 9px);
+  }
+}
+
+.swiper__button-next {
+  right: calc(5% - 10px);
+
+  @media (min-width: $desktop-width) {
+    right: calc(21% - 5px);
+  }
+}
+
+.swiper__button-prev {
+  left: calc(5% - 10px);
+
+  @media (min-width: $desktop-width) {
+    left: calc(21% - 5px);
+  }
+}
+
+
+.swiper-slide {
+  background-color: $background;
+  color: $color-black;
+  padding: 29px 25px;
+  text-align: center;
+}

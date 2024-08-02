@@ -1,8 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
 window.addEventListener('load', () => {
   const button = document.querySelector('.js-burger');
   const navMenu = document.querySelector('.js-nav-menu');
@@ -22,3 +17,27 @@ window.addEventListener('load', () => {
     navMenu.classList.toggle('is-active');
   });
 });
+
+// https://swiperjs.com/get-started#installation
+import Swiper from 'swiper';
+import {Navigation} from 'swiper/modules';
+import 'swiper/css';
+
+
+const swiper = new Swiper('.swiper__swiper', {
+  modules: [Navigation],
+  loop: true,
+  navigation: {
+    nextEl: '.swiper__button-next',
+    prevEl: '.swiper__button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+  },
+});
+
+swiper.update();
+
