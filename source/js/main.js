@@ -40,4 +40,3 @@ const swiper = new Swiper('.swiper__swiper', {
 });
 
 swiper.update();
-
