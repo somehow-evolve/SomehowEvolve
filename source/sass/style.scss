@@ -1,11 +1,12 @@
 // Vendor
 @import "vendor/normalize";
+@import "vendor/swiper";
 
 /* GLOBAL */
 @import "./global/variables";
 @import "./global/global";
 @import "./global/container";
-
+@import "./global/visually-hidden";
 
 /* BLOCKS */
 @import "./blocks/header";
@@ -15,4 +16,5 @@
 @import "./blocks/button";
 @import "./blocks/hero";
 @import "./blocks/dropping";
-
+@import "./blocks/links";
+@import "./blocks/swiper";
