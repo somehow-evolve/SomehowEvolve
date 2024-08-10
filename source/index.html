@@ -34,7 +34,7 @@
               tabindex="-1">главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link-index" href="catalog.html">Nav</a>
+            <a class="site-list__link site-list__link-index" href="#nav">Nav</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link site-list__link-index" href="#tab">tab</a>
@@ -277,7 +277,55 @@
 
 
     </section>
-    
+
+    <section class="nav">
+      <h2 class="title-nav title" id="nav">Nav</h2>
+      <p class="nav__text">Сделана без JS, + на JS закрытие при нажатии на сылку</p>
+
+      <header class="header-nav">
+        <div class="header__wrraper-nav container">
+
+          <img class="header__logo-nav logo-nav" src="/__spritemap#sprite-header-logo-view" width="142" height="42"
+            aria-current="page" alt="Логотип Шаблоны.">
+
+          <div class="header__menu-nav menu-nav">
+            <input class="menu__burger-checkbox-nav visually-hidden" type="checkbox" name="burger" id="burger-checkbox">
+            <label class="header__burger-nav menu__burger-nav" aria-label="меню" for="burger-checkbox"></label>
+
+            <ul class="menu-list-nav site-list-nav">
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">Туры</a>
+              </li>
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">Обучение</a>
+              </li>
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">О нас</a>
+              </li>
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">Отзывы</a>
+              </li>
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">Фотографии</a>
+              </li>
+              <li class="menu-item-nav">
+                <a class="site-list__link-nav" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__tel-nav tel-nav">
+            <a class="header__link-nav tel__link-nav" href="tel:+78000000000">8 800 000-00-00</a>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="dropping__wrapper links">
+        <a class="dropping__link links__link" href="tabs.html">Перейти на страницу готовых навигаций</a>
+      </div>
+    </section>
+
     <section class="dropping container" id="tab">
       <h2 class="dropping__title title">Легкий таб</h2>
       <div class="dropping__dropping ">
@@ -358,6 +406,8 @@
     <section>
       <h2 class="title">Красивые или сложные section</h2>
     </section>
+
+
   </main>
 
 
