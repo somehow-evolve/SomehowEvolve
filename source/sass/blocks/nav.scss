@@ -1,0 +1,247 @@
+.title-nav {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.nav__text {
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.header-nav {
+  background-color: $bg-header;
+}
+
+.header__wrraper-nav {
+  position: relative;
+  display: grid;
+  padding: 15px 15px 9px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 12px 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 45px 21px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 120px;
+  }
+}
+
+.header__menu-nav {
+  grid-column: 1;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin: 3px 0 0 30px;
+    order: 0;
+  }
+}
+
+.header__logo-nav {
+  grid-column: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+}
+
+.header__burger-nav {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+}
+
+
+.header__tel-nav {
+  grid-column: 2;
+  text-align: right;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+  }
+}
+
+.header__link-nav {
+  color: $color-white;
+}
+
+
+.logo-nav {
+  width: 142px;
+  height: 42px;
+}
+
+
+.menu__burger-nav {
+  display: block;
+  width: 26px;
+  height: 26px;
+  mask-image: url("/__spritemap#sprite-menu-view");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.menu__burger-checkbox-nav:checked + .menu__burger-nav {
+  mask-image: url("/__spritemap#sprite-cross-view");
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.menu-list-nav {
+  top: 85px;
+  left: 0;
+  position: absolute;
+  padding: 26px 9px 32px;
+  margin: 0;
+  background: $bg-header;
+  list-style: none;
+  display: none;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    padding: 28px 39px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: flex;
+    gap: 19px;
+    padding: 0;
+  }
+}
+
+.menu-item-nav {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.menu__burger-checkbox-nav:checked ~ .menu-list-nav {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+
+.site-list-nav {
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.site-list__link-nav {
+  font-family: $font-700;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: $color-white;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 3px 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: $font-400;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $color-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $button-extra;
+    border: 1px solid transparent;
+  }
+
+  &--disabled-nav {
+    color: $color-disabled;
+    pointer-events: none;
+  }
+}
+
+
+.tel__link-nav {
+  font-family: $font-600;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: $color-basic;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    color: $color-basic;
+    outline: none;
+  }
+
+  &:active {
+    color: $button-extra;
+    border: 1px solid transparent;
+  }
+
+  &--disabled-nav {
+    color: $color-disabled;
+    pointer-events: none;
+  }
+}

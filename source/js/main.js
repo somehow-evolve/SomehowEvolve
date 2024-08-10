@@ -18,6 +18,8 @@ window.addEventListener('load', () => {
   });
 });
 
+
+// Swiper
 // https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
@@ -40,3 +42,15 @@ const swiper = new Swiper('.swiper__swiper', {
 });
 
 swiper.update();
+
+
+// Navigation,
+// закрытие при нажатии на сылку
+const magicLink = document.querySelectorAll('.site-list__link');
+const checkbox = document.querySelector('.menu__burger-checkbox');
+
+magicLink.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    checkbox.click();
+  });
+});
